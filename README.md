@@ -10,16 +10,12 @@ You need to install latest [nodejs](https://nodejs.org/en) to run the applicatio
 
 1. clone the project
 
-2. Go to the project folders (ecommerce-admin-api and ecommerce-store), type:
+2. Go to the project folder, type:
 
 npm install
 
-3. Create .env following the format in .env-sample, add the api keys([nextauth](https://next-auth.js.org/), [cloudinary](https://cloudinary.com/), database url - use [PlanetScale](https://planetscale.com/) for example)
+3. Create .env following the format in .env-sample, add the api keys for the store (you need to be able to run the backend dashboard first, then go to settings, copy the NEXT_PUBLIC_API_URL)
 
- - to create table, cd to ecommerce-admin-api, then type:
-    npx prisma generate
-    npx prisma db push
-
-4. Go to the project folders (ecommerce-admin-api for backend and ecommerce-store for frontend), type the following command to run
+4. Go to the project folder, type the following command to run
 
 npm run dev
